@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Northern Ridgeline Construction | Big Rapids, MI</title>
+  <meta
+    name="description"
+    content="Northern Ridgeline Construction provides residential remodeling, new builds, framing, drywall, painting, demolition, pole barns and more in Big Rapids and surrounding Michigan communities."
+  />
+
+  <meta property="og:title" content="Northern Ridgeline Construction | Big Rapids, MI" />
+  <meta
+    property="og:description"
+    content="Quality work. Lasting value. Residential remodeling, new builds, framing, drywall, painting, demolition, pole barns and more."
+  />
+
+  <style>
+    :root {
+      --black: #05080c;
+      --black-soft: #0b1017;
+      --panel: #101720;
+      --blue: #129cff;
+      --blue-dark: #087ccc;
+      --white: #ffffff;
+      --muted: #b9c2cc;
+      --border: rgba(255,255,255,.12);
+      --shadow: 0 20px 55px rgba(0,0,0,.28);
+      --radius: 20px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--black);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: var(--blue);
+      color: #00101c;
+      font-weight: 800;
+      text-align: center;
+      padding: 9px 16px;
+      font-size: .92rem;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(5,8,12,.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      min-width: 240px;
+    }
+
+    .brand-main {
+      font-weight: 900;
+      letter-spacing: .055em;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+    }
+
+    .brand-sub {
+      margin-top: 7px;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: .32em;
+      font-weight: 800;
+      font-size: .65rem;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-weight: 700;
+      font-size: .95rem;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .nav-cta {
+      padding: 11px 17px;
+      background: var(--blue);
+      color: #00111e;
+      border-radius: 999px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 690px;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at 80% 15%, rgba(18,156,255,.17), transparent 30%),
+        linear-gradient(130deg, #05080c 20%, #0a1017 70%, #081521);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 38px 38px;
+      mask-image: linear-gradient(to right, transparent, black);
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 60px;
+      align-items: center;
+      padding: 95px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--blue);
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: .18em;
+      font-size: .82rem;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 5.4rem);
+      line-height: .98;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: -.035em;
+    }
+
+    h1 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: #d4d9df;
+      font-size: 1.18rem;
+      margin: 27px 0 0;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 32px;
+    }
+
+    .btn {
+      border: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 23px;
+      border-radius: 8px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: .2s ease;
+      font-size: .98rem;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #00101c;
+    }
+
+    .btn-primary:hover {
+      background: #38adff;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,.23);
+      background: rgba(255,255,255,.04);
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .hero-card {
+      background: rgba(15,23,32,.86);
+      border: 1px solid rgba(18,156,255,.22);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 30px;
+    }
+
+    .hero-card h2 {
+      margin: 0 0 8px;
+      font-size: 1.7rem;
+    }
+
+    .hero-card > p {
+      margin: 0 0 20px;
+      font-size: .98rem;
+      color: var(--muted);
+    }
+
+    .quick-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .quick-list li {
+      padding: 13px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-weight: 700;
+    }
+
+    .quick-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .check {
+      color: var(--blue);
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.06;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin: 17px 0 0;
+    }
+
+    .services {
+      background: #090d12;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      transition: .2s ease;
+    }
+
+    .service:hover {
+      border-color: rgba(18,156,255,.55);
+      transform: translateY(-3px);
+    }
+
+    .service-icon {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      margin: 0 0 8px;
+      font-size: 1.25rem;
+    }
+
+    .service p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
+    .project-types {
+      background:
+        linear-gradient(145deg, rgba(18,156,255,.10), transparent 37%),
+        var(--black);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .large-copy h2 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      text-transform: uppercase;
+      line-height: 1.05;
+    }
+
+    .large-copy p {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .feature-box {
+      border-left: 4px solid var(--blue);
+      padding: 25px 28px;
+      background: var(--panel);
+      border-radius: 0 14px 14px 0;
+    }
+
+    .feature-box h3 {
+      margin-top: 0;
+    }
+
+    .feature-box p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .quote-section {
+      background: #0b1118;
+    }
+
+    .quote-layout {
+      display: grid;
+      grid-template-columns: .72fr 1.28fr;
+      gap: 46px;
+      align-items: start;
+    }
+
+    .quote-info {
+      position: sticky;
+      top: 125px;
+    }
+
+    .quote-info h2 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .quote-info p {
+      color: var(--muted);
+    }
+
+    .contact-card {
+      margin-top: 28px;
+      border: 1px solid var(--border);
+      background: var(--black-soft);
+      border-radius: 14px;
+      padding: 23px;
+    }
+
+    .contact-row {
+      margin: 13px 0;
+    }
+
+    .contact-row strong {
+      display: block;
+      color: var(--blue);
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    .form-card {
+      background: white;
+      color: #161b22;
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .form-card h3 {
+      font-size: 1.7rem;
+      margin: 0 0 7px;
+    }
+
+    .form-card .intro {
+      color: #68717d;
+      margin-top: 0;
+      margin-bottom: 28px;
+    }
+
+    form {
+      display: grid;
+      gap: 19px;
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 17px;
+    }
+
+    .field {
+      display: grid;
+      gap: 7px;
+    }
+
+    label {
+      font-weight: 800;
+      font-size: .9rem;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid #cfd6dd;
+      border-radius: 8px;
+      min-height: 48px;
+      padding: 11px 13px;
+      background: white;
+      color: #111820;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 135px;
+      resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 2px solid rgba(18,156,255,.25);
+      border-color: var(--blue);
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .checkbox {
+      display: flex;
+      gap: 9px;
+      align-items: center;
+      border: 1px solid #d9dfe5;
+      padding: 10px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: .92rem;
+    }
+
+    .checkbox input {
+      width: auto;
+      min-height: auto;
+      margin: 0;
+    }
+
+    .availability-wrap {
+      border: 1px solid #dfe4e9;
+      background: #f7f9fb;
+      padding: 18px;
+      border-radius: 10px;
+    }
+
+    .availability-wrap h4 {
+      margin: 0 0 5px;
+      font-size: 1rem;
+    }
+
+    .availability-wrap p {
+      margin: 0 0 15px;
+      color: #68717d;
+      font-size: .88rem;
+    }
+
+    .submit {
+      width: 100%;
+      min-height: 56px;
+      background: var(--blue);
+      color: #00101c;
+      border: 0;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .submit:hover {
+      background: #38adff;
+    }
+
+    .fine-print {
+      font-size: .8rem;
+      color: #74808c;
+      margin: -4px 0 0;
+    }
+
+    .cta {
+      background: var(--blue);
+      color: #00101c;
+      padding: 60px 0;
+    }
+
+    .cta-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .cta h2 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .cta p {
+      margin: 12px 0 0;
+      font-weight: 700;
+    }
+
+    .cta .btn {
+      background: #05080c;
+      color: white;
+      min-width: 180px;
+    }
+
+    footer {
+      background: #030507;
+      padding: 48px 0 28px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr .8fr .8fr;
+      gap: 36px;
+    }
+
+    footer h3 {
+      margin-top: 0;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    footer p,
+    footer a {
+      color: #aab3bd;
+      font-size: .93rem;
+    }
+
+    footer a:hover {
+      color: var(--blue);
+    }
+
+    .copyright {
+      border-top: 1px solid var(--border);
+      margin-top: 38px;
+      padding-top: 22px;
+      color: #7e8995;
+      font-size: .82rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        display: none;
+      }
+
+      .hero-grid,
+      .split,
+      .quote-layout,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-grid {
+        padding: 75px 0;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .quote-info {
+        position: static;
+      }
+
+      .cta-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(100% - 26px, var(--max));
+      }
+
+      .brand-main {
+        font-size: .91rem;
+      }
+
+      .brand-sub {
+        font-size: .54rem;
+      }
+
+      h1 {
+        font-size: 2.75rem;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .service-grid,
+      .two,
+      .checkbox-group {
+        grid-template-columns: 1fr;
+      }
+
+      .form-card {
+        padding: 23px 18px;
+      }
+
+      .hero-card {
+        padding: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    Serving Big Rapids and surrounding Michigan communities
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <span class="brand-main">Northern Ridgeline</span>
+        <span class="brand-sub">Construction</span>
+      </a>
+
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">What We Build</a>
+        <a href="#quote">Get a Quote</a>
+        <a href="tel:4802268062">Call</a>
+        <a class="nav-cta" href="#quote">Request Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div>
+          <span class="eyebrow">Big Rapids, Michigan</span>
+
+          <h1>
+            Quality Work.<br />
+            <span>Lasting Value.</span>
+          </h1>
+
+          <p>
+            Northern Ridgeline Construction handles residential projects from
+            framing and drywall to remodeling, demolition, painting, pole barns
+            and new stick-built construction.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#quote">Request a Quote</a>
+            <a class="btn btn-secondary" href="tel:4802268062">
+              Call (480) 226-8062
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>What can we build for you?</h2>
+          <p>
+            From one part of a project to a larger build, tell us what you have
+            in mind and we'll talk through the next step.
+          </p>
+
+          <ul class="quick-list">
+            <li><span class="check">✓</span> Residential remodeling</li>
+            <li><span class="check">✓</span> Framing & stick builds</li>
+            <li><span class="check">✓</span> Pole barns</li>
+            <li><span class="check">✓</span> Drywall</li>
+            <li><span class="check">✓</span> Interior & exterior painting</li>
+            <li><span class="check">✓</span> Demolition</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="section-head">
+          <span class="eyebrow">Construction Services</span>
+          <h2>One Contractor. A Lot of Possibilities.</h2>
+          <p>
+            Need one phase of your project completed or help taking a larger
+            project from demolition to finished space? Northern Ridgeline
+            Construction can handle a wide range of residential construction
+            work.
+          </p>
+        </div>
+
+        <div class="service-grid">
+
+          <article class="service">
+            <div class="service-icon">🏠</div>
+            <h3>Residential Remodeling</h3>
+            <p>
+              Renovations, updates, room transformations and improvements to
+              make your existing home work better.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon">🪚</div>
+            <h3>Framing</h3>
+            <p>
+              Structural framing for remodels, additions, outbuildings and new
+              stick-built construction.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon">🔨</div>
+            <h3>Pole Barns</h3>
+            <p>
+              Pole barn and post-frame style projects for storage, workshops,
+              garages and other property needs.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon">◻️</div>
+            <h3>Drywall</h3>
+            <p>
+              Drywall installation and finishing for renovations, repairs and
+              new construction.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon">🖌️</div>
+            <h3>Painting</h3>
+            <p>
+              Interior and exterior painting as part of your renovation or
+              standalone improvement project.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon">⚒️</div>
+            <h3>Demolition</h3>
+            <p>
+              Interior and project demolition to clear the way for repairs,
+              remodeling or a fresh build.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="project-types" id="about">
+      <div class="container split">
+
+        <div class="large-copy">
+          <span class="eyebrow">Built Around Your Project</span>
+
+          <h2>
+            Have something else in mind?
+          </h2>
+
+          <p>
+            Construction projects don't always fit neatly into one category.
+            If it involves framing, building, tearing out, finishing or
+            improving your residential property, send us the details.
+          </p>
+
+          <p>
+            We'll take a look at what you're trying to accomplish and let you
+            know whether Northern Ridgeline Construction is a fit.
+          </p>
+
+          <a class="btn btn-primary" href="#quote">Tell Us About Your Project</a>
+        </div>
+
+        <div>
+          <div class="feature-box">
+            <h3>Residential Remodels & New Builds</h3>
+            <p>
+              Whether you're opening up an existing room, rebuilding part of
+              your home, adding a structure or starting something new, the
+              first step is understanding your project, location and timeline.
+            </p>
+          </div>
+
+          <div class="feature-box" style="margin-top:18px;">
+            <h3>Local Construction in the Big Rapids Area</h3>
+            <p>
+              Based in Big Rapids, Michigan and serving homeowners and property
+              owners throughout the surrounding area.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="quote-section" id="quote">
+      <div class="container quote-layout">
+
+        <div class="quote-info">
+          <span class="eyebrow">Free Quote Request</span>
+
+          <h2>Let's Talk About Your Project.</h2>
+
+          <p>
+            Give us the basics below and choose a few times that could work for
+            an estimate or project walkthrough. We'll follow up to confirm.
+          </p>
+
+          <div class="contact-card">
+
+            <div class="contact-row">
+              <strong>Phone</strong>
+              <a href="tel:4802268062">(480) 226-8062</a>
+            </div>
+
+            <div class="contact-row">
+              <strong>Email</strong>
+              <a href="mailto:northernridgelineconstruction@gmail.com">
+                northernridgelineconstruction@gmail.com
+              </a>
+            </div>
+
+            <div class="contact-row">
+              <strong>Location</strong>
+              Big Rapids, Michigan
+            </div>
+
+          </div>
+        </div>
+
+        <div class="form-card">
+
+          <h3>Request Your Quote</h3>
+
+          <p class="intro">
+            Tell us about your project. Photos, measurements and a short
+            description can help us understand what you're looking for.
+          </p>
+
+          <form
+            action="https://formsubmit.co/northernridgelineconstruction@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Website Quote Request - Northern Ridgeline Construction"
+            />
+
+            <input
+              type="hidden"
+              name="_template"
+              value="table"
+            />
+
+            <input
+              type="hidden"
+              name="_captcha"
+              value="false"
+            />
+
+            <input
+              type="hidden"
+              name="lead_source"
+              id="lead_source"
+              value="Northern Ridgeline Website"
+            />
+
+            <input
+              type="hidden"
+              name="referral_partner"
+              value="Untrained Momentum"
+            />
+
+            <input
+              type="hidden"
+              name="landing_page"
+              id="landing_page"
+              value=""
+            />
+
+            <input
+              type="hidden"
+              name="referral_url"
+              id="referral_url"
+              value=""
+            />
+
+            <div class="two">
+
+              <div class="field">
+                <label for="name">Name *</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone *</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  required
+                  autocomplete="tel"
+                />
+              </div>
+
+            </div>
+
+            <div class="two">
+
+              <div class="field">
+                <label for="email">Email *</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="field">
+                <label for="location">Project City / Location *</label>
+                <input
+                  id="location"
+                  name="project_location"
+                  type="text"
+                  placeholder="Example: Big Rapids, MI"
+                  required
+                />
+              </div>
+
+            </div>
+
+            <div class="field">
+
+              <label>What do you need help with? *</label>
+
+              <div class="checkbox-group">
+
+                <label class="checkbox">
+                  <input type="checkbox" name="services[]" value="Remodeling" />
+                  Remodeling
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" name="services[]" value="Framing" />
+                  Framing
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" name="services[]" value="Pole Barn" />
+                  Pole Barn
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" name="services[]" value="Drywall" />
+                  Drywall
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" name="services[]" value="Painting" />
+                  Painting
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" name="services[]" value="Demolition" />
+                  Demolition
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" name="services[]" value="New Build" />
+                  New Build
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" name="services[]" value="Other" />
+                  Something Else
+                </label>
+
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="description">Tell us about the project *</label>
+              <textarea
+                id="description"
+                name="project_description"
+                required
+                placeholder="What are you hoping to have done? Include approximate size, current condition and anything else that may help."
+              ></textarea>
+            </div>
+
+            <div class="two">
+
+              <div class="field">
+                <label for="timeline">When would you like to start?</label>
+
+                <select id="timeline" name="desired_timeline">
+                  <option value="">Select one</option>
+                  <option>As soon as possible</option>
+                  <option>Within 30 days</option>
+                  <option>1–3 months</option>
+                  <option>3–6 months</option>
+                  <option>6+ months</option>
+                  <option>Just planning / pricing</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="budget">Approximate project budget</label>
+
+                <select id="budget" name="project_budget">
+                  <option value="">Select if known</option>
+                  <option>Under $2,500</option>
+                  <option>$2,500–$5,000</option>
+                  <option>$5,000–$10,000</option>
+                  <option>$10,000–$25,000</option>
+                  <option>$25,000–$50,000</option>
+                  <option>$50,000+</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="field">
+              <label for="photo">Project photo</label>
+              <input
+                id="photo"
+                name="project_photo"
+                type="file"
+                accept="image/*"
+              />
+            </div>
+
+            <div class="availability-wrap">
+
+              <h4>Quote / Walkthrough Availability</h4>
+
+              <p>
+                Give us up to three times that could work. We'll contact you to
+                confirm an appointment.
+              </p>
+
+              <div class="two">
+
+                <div class="field">
+                  <label for="date1">First choice date</label>
+                  <input id="date1" name="first_choice_date" type="date" />
+                </div>
+
+                <div class="field">
+                  <label for="time1">Preferred time</label>
+                  <select id="time1" name="first_choice_time">
+                    <option value="">Select</option>
+                    <option>Morning - 8 AM to 11 AM</option>
+                    <option>Midday - 11 AM to 2 PM</option>
+                    <option>Afternoon - 2 PM to 5 PM</option>
+                    <option>Evening - After 5 PM</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="two" style="margin-top:14px;">
+
+                <div class="field">
+                  <label for="date2">Second choice date</label>
+                  <input id="date2" name="second_choice_date" type="date" />
+                </div>
+
+                <div class="field">
+                  <label for="time2">Preferred time</label>
+                  <select id="time2" name="second_choice_time">
+                    <option value="">Select</option>
+                    <option>Morning - 8 AM to 11 AM</option>
+                    <option>Midday - 11 AM to 2 PM</option>
+                    <option>Afternoon - 2 PM to 5 PM</option>
+                    <option>Evening - After 5 PM</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="two" style="margin-top:14px;">
+
+                <div class="field">
+                  <label for="date3">Third choice date</label>
+                  <input id="date3" name="third_choice_date" type="date" />
+                </div>
+
+                <div class="field">
+                  <label for="time3">Preferred time</label>
+                  <select id="time3" name="third_choice_time">
+                    <option value="">Select</option>
+                    <option>Morning - 8 AM to 11 AM</option>
+                    <option>Midday - 11 AM to 2 PM</option>
+                    <option>Afternoon - 2 PM to 5 PM</option>
+                    <option>Evening - After 5 PM</option>
+                  </select>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="field">
+              <label for="contact_method">Best way to contact you</label>
+
+              <select id="contact_method" name="preferred_contact_method">
+                <option>Phone call</option>
+                <option>Text message</option>
+                <option>Email</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="hear">How did you hear about Northern Ridgeline?</label>
+
+              <select id="hear" name="how_did_you_hear_about_us">
+                <option value="">Select one</option>
+                <option>Facebook</option>
+                <option>Google</option>
+                <option>Friend / family referral</option>
+                <option>Business card</option>
+                <option>Local community group</option>
+                <option>Untrained Momentum</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <button class="submit" type="submit">
+              Send My Quote Request
+            </button>
+
+            <p class="fine-print">
+              Submitting this form does not schedule a confirmed appointment or
+              create a contract. Northern Ridgeline Construction will contact
+              you to discuss your project and confirm availability.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-wrap">
+
+        <div>
+          <h2>Ready to get your project moving?</h2>
+          <p>Tell Northern Ridgeline Construction what you're working on.</p>
+        </div>
+
+        <a class="btn" href="#quote">Get a Quote</a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <div class="brand">
+            <span class="brand-main">Northern Ridgeline</span>
+            <span class="brand-sub">Construction</span>
+          </div>
+
+          <p style="max-width:430px;margin-top:20px;">
+            Residential remodeling, new builds, framing, drywall, painting,
+            demolition, pole barns and more in the Big Rapids, Michigan area.
+          </p>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+
+          <p>
+            <a href="tel:4802268062">(480) 226-8062</a>
+          </p>
+
+          <p>
+            <a href="mailto:northernridgelineconstruction@gmail.com">
+              northernridgelineconstruction@gmail.com
+            </a>
+          </p>
+
+          <p>Big Rapids, MI</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+
+          <p><a href="#services">Services</a></p>
+          <p><a href="#about">What We Build</a></p>
+          <p><a href="#quote">Request a Quote</a></p>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        <span>
+          © <span id="year"></span> Northern Ridgeline Construction. All rights reserved.
+        </span>
+
+        <span>Quality Work. Lasting Value.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("landing_page").value = window.location.href;
+    document.getElementById("referral_url").value = document.referrer || "Direct Visit";
+
+    const params = new URLSearchParams(window.location.search);
+
+    const source =
+      params.get("utm_source") ||
+      params.get("source") ||
+      params.get("ref") ||
+      "";
+
+    if (source) {
+      document.getElementById("lead_source").value = source;
+    }
+
+    const today = new Date();
+    const formattedToday = today.toISOString().split("T")[0];
+
+    ["date1", "date2", "date3"].forEach(function(id) {
+      document.getElementById(id).setAttribute("min", formattedToday);
+    });
+  </script>
+
+</body>
+</html>
